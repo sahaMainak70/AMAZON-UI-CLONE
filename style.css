@@ -1,7 +1,7 @@
 * {
     margin: 0;
     padding: 0;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     box-sizing: border-box;
 }
 
@@ -23,6 +23,7 @@
     display: flex;
     flex-direction: row;
     align-items: center;
+    justify-content: space-evenly;
 }
 
 .navbar_opener {
@@ -70,8 +71,11 @@
 }
 
 .navbar_location {
-   padding: 9px;
-   cursor: pointer;
+    padding-top: 9px;
+    width: 90px;
+    height: 50px;
+    cursor: pointer;
+    margin-right: 5px;
 }
 
 .navbar_location .location_line_one {
@@ -111,5 +115,204 @@
     height: 100%;
     width: 100%;
     border: none;
+    background-color: #D4D4D4;
+    border-right: 1px solid #979696;
     outline: none;
+    border-top-left-radius: 3px;
+    border-bottom-left-radius: 3px;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+.search_bar {
+    height: 40px;
+    width: 350px;
+}
+
+.search_bar input {
+    height: 100%;
+    width: 100%;
+    padding-left: 10px;
+    font-size: 16px;
+    border: none;
+    outline: none;
+}
+
+.search_icon {
+    height: 40px;
+    width: 50px;
+    color: black;
+    font-size: 25px;
+    background-color: #F3A847;
+    border-top-right-radius: 3px;
+    border-bottom-right-radius: 3px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.navbar_closer {
+    width: 345px;
+    height: 60px;
+    display: flex;
+    flex-direction: row;
+}
+
+.navbar_language {
+    height: 50px;
+    width: 73px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin-top: 5px;
+    cursor: pointer;
+}
+
+.navbar_closer .navbar_flag_logo {
+    height: 16px;
+    width: 21px;
+}
+
+.navbar_closer .navbar_flag_logo img{
+    width: 100%;
+    height: 100%;
+}
+
+.navbar_language p {
+    color: #ffffff;
+    text-transform: uppercase;
+    padding-left: 1px;
+    font-weight: 550;
+}
+
+.navbar_account {
+    height: 50px;
+    width: 131px;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 5px;
+    padding-left: 5px;
+    cursor: pointer;
+}
+
+.navbar_account .account_line_one {
+    color: #ffffff;
+    font-size: 12px;
+    font-weight: 500;
+}
+
+.navbar_account .account_line_two {
+    color: #ffffff;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.navbar_orders {
+    height: 50px;
+    width: 76px;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 5px;
+    padding-left: 5px;
+    cursor: pointer;
+}
+
+.navbar_orders .orders_line_one {
+    color: #ffffff;
+    font-size: 12px;
+    font-weight: 500;
+}
+
+.navbar_orders .orders_line_two {
+    color: #ffffff;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.navbar_cart_icon {
+    height: 50px;
+    width: 59px;
+    color: #ffffff;
+    margin-top: 5px;
+    font-size: 35px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.secondary_navbar {
+    height: 40px;
+    width: 100%;
+    background-color: #232F3E;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    color: #ffffff;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.secondary_navbar_options_all {
+    width: 60px;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.secondary_navbar_options_all p {
+    padding-left: 4px;
+}
+
+.secondary_navbar_options_deals {
+    width: 103px;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.secondary_navbar_options_registry {
+    width: 70px;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.secondary_navbar_options_service {
+    width: 130px;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.secondary_navbar_options_gift {
+    width: 81px;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.secondary_navbar_options_sell {
+    width: 42px;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
 }
