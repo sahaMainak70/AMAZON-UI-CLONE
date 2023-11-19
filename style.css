@@ -341,7 +341,7 @@
 
 .body {
     background-color: #E3E6E6;
-    height: 900px;
+    height: 1500px;
 }
 
 .body .line_holder {
@@ -381,6 +381,7 @@
     width: 33.33%;
     margin: 10px;
     background-color: white;
+    cursor: pointer;
 }
 
 .card h2 {
@@ -401,4 +402,316 @@
 
 .card a:hover {
     color: #C7511F;
+}
+
+.card_holder_two {
+    width: 100%;
+    height: 280px;
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    top: -450px;
+    padding: 0 10px 0 10px;
+}
+
+.card_holder_two .card_type_two {
+    background-color: white;
+    width: 100%;
+    height: 280px;
+    margin: 10px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+}
+
+.card_type_two h2 {
+    padding: 20px;
+    font-size: 21px;
+}
+
+.card_type_two .image_holder {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    cursor: pointer;
+}
+
+.image_holder img {
+    width: 15%;
+    height: 50%;
+    padding: 10px 0 0 0;
+    margin: 10px;
+}
+
+#card2 {
+    position: relative;
+    top: -420px;
+}
+
+#card3 {
+    position: relative;
+    top: -420px;
+}
+
+#card4 img {
+    padding: 20px;
+    width: 100%;
+    height: 275px;
+}
+
+.footer .sign_in {
+    position: relative;
+    top: 45px;
+    background-color: white;
+    border: 1px solid #DDDDDD;
+    width: 100%;
+    height: 125px;
+    padding: 1px;
+    border-radius: 2px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.sign_in #p1 {
+    font-size: 14px;
+}
+
+.sign_in button {
+    width: 230px;
+    height: 28px;
+    border: none;
+    outline: none;
+    background-color: #FFCD4F;
+    border-radius: 5px;
+    border: 1px solid #E6A400;
+    position: relative;
+    top: 5px;
+    cursor: pointer;
+}
+
+.sign_in #p2 {
+    font-size: 12px;
+    position: relative;
+    top: 10px;
+}
+
+#p2 a {
+    text-decoration: none;
+    color: #007185;
+}
+
+#p2 a:hover {
+    color: #C7511F;
+}
+
+.back_to_top {
+    width: 100%;
+    height: 50px;
+}
+
+.back_to_top button {
+    width: 100%;
+    height: 100%;
+    background-color: #3f4b5a;
+    position: relative;
+    top: 70px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    color: white;
+    font-size: 14px;
+}
+
+.back_to_top button:hover {
+    background-color: #485769;
+}
+
+.footer .main_footer {
+    height: 940px;
+    width: 100%;
+}
+
+.first_footer {
+    height: 520px;
+    background-color: #232F3E;
+    position: relative;
+    top: 70px;
+}
+
+.first_footer .first_footer_top {
+    height: 400px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.divider {
+    height: 0px;
+    width: 100%;
+    border: 0.1px solid #dddddd52;
+    background-color: #232F3E;
+}
+
+.first_footer_top .footer_box {
+    height: 100%;
+    width: 25%;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    top: 20px;
+}
+
+.footer_box h2 {
+    color: white;
+    font-size: 16px;
+    padding: 10px 0 0 0;
+}
+
+.footer_box a {
+    color: #cccccc;
+    font-size: 16px;
+    padding: 10px 0 0 0;
+    font-size: 15px;
+    text-decoration: none;
+}
+
+.footer_box a:hover {
+    text-decoration: underline;
+}
+
+.first_footer_down {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    top: 50px;
+}
+
+.first_footer_down .footer_logo_holder {
+    height: 23px;
+    width: 76px;
+    position: relative;
+    left: -30px;
+    top: -10px;
+}
+
+.footer_logo_holder img {
+    height: 100%;
+    width: 100%;
+    cursor: pointer;
+}
+
+.first_footer_down .button {
+    padding: 0 10px 0 0;
+    position: relative;
+    top: -10px;
+    left: 50px;
+}
+
+.button button {
+    padding: 6px;
+    background-color: #232F3E;
+    color: white;
+    border: none;
+    outline: none;
+    border: 1px solid rgb(131, 126, 126);
+    border-radius: 5px;
+    font-size: 13px;
+    cursor: pointer;
+}
+
+.button i {
+    padding-right: 10px;
+}
+
+#b1{
+    width: 115px;
+}
+
+#b2{
+    width: 150px;
+}
+
+#b3{
+    width: 140px;
+}
+
+.button img {
+    height: 15px;
+    width: 21px;
+    margin-right: 10px;
+}
+
+.last_footer {
+    height: 500px;
+    width: 100%;
+    background-color: #131A22;
+}
+
+.last_footer .upper_last_footer {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.upper_last_footer .last_footer_box_row {
+    z-index: 2;
+    text-wrap: wrap;
+    color: white;
+    font-size: 12px;
+    position: relative;
+    top: 100px;
+    padding: 10px;
+    display: flex;
+    flex-direction: row;
+
+}
+
+.last_footer_box_row .last_footer_box {
+    width: 14.28%;
+    padding: 5px;
+    cursor: pointer;
+}
+
+.last_footer_box_row .last_footer_box:hover {
+    text-decoration: underline;
+}
+
+.p10 {
+    color: #cccccc;
+}
+
+.lower_last_footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    z-index: 2;
+    color: #cccccc;
+    font-size: 14px;
+    position: relative;
+    top: 120px;
+}
+
+.lower_last_footer .condition {
+    display: flex;
+    flex-direction: row;
+}
+
+.condition p {
+    padding-left: 8px;
+    padding-right: 8px;
+    position: relative;
+    top: -5px;
+    cursor: pointer;
+}
+
+.condition p:hover {
+    text-decoration: underline;
 }
