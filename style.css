@@ -24,7 +24,7 @@
   flex-direction: row;
   align-items: center;
   justify-content: start;
-  padding: 0 10px;
+  padding-left: 10px;
 }
 
 .navbar_opener {
@@ -141,6 +141,7 @@
   background-position: right 10px center;
   background-size: 10px 10px;
   z-index: 1000;
+  position: relative;
 }
 
 .search_option select:hover {
@@ -149,8 +150,20 @@
 }
 
 .search_option select:focus {
-  outline: 3px solid #ff9900;
-  border-right: 3px solid #ff9900;
+  outline: 1px solid #ff9900;
+  box-shadow: 0 0 2px 3px #ff9900;
+  z-index: 1000;
+}
+
+.overlay {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 85.8%;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: none;
+  z-index: 10; 
 }
 
 .search_bar {
@@ -165,14 +178,11 @@
   font-size: 16px;
   border: none;
   outline: none;
+  transition: outline-color 0.5s ease-in-out, box-shadow 0.5s ease-in-out;
 }
 
 .search_bar input::placeholder {
   color: #5d5e5e;
-}
-
-.search_bar input:focus {
-  outline: 3px solid #ff9900;
 }
 
 .search_icon {
@@ -190,10 +200,13 @@
 }
 
 .navbar_closer {
-  width: 345px;
+  width: 390px;
   height: 60px;
   display: flex;
   flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  padding: 0 15px;
 }
 
 .navbar_language {
@@ -204,6 +217,8 @@
   align-items: center;
   justify-content: center;
   margin-top: 5px;
+  padding-top: 5px;
+  margin-right: 5px;
   cursor: pointer;
 }
 
@@ -233,6 +248,7 @@
   justify-content: center;
   margin-top: 5px;
   padding-left: 5px;
+  margin-right: 5px;
   cursor: pointer;
 }
 
@@ -257,6 +273,7 @@
   justify-content: center;
   margin-top: 5px;
   padding-left: 5px;
+  margin-right: 5px;
   cursor: pointer;
 }
 
@@ -274,14 +291,21 @@
 
 .navbar_cart_icon {
   height: 50px;
-  width: 59px;
+  width: 95px;
   color: #ffffff;
   margin-top: 5px;
-  font-size: 35px;
+  font-size: 30px;
   display: flex;
-  align-items: center;
+  align-items: end;
   justify-content: center;
   cursor: pointer;
+  padding-bottom: 9px;
+}
+
+.navbar_cart_icon span {
+  color: #ffffff;
+  font-size: 14px;
+  font-weight: 700;
 }
 
 .secondary_navbar {
@@ -294,6 +318,7 @@
   color: #ffffff;
   font-size: 14px;
   font-weight: 600;
+  padding-left: 10px;
 }
 
 .secondary_navbar_options_all {
@@ -384,7 +409,7 @@
 .body .line_holder {
   height: 40px;
   line-height: 18px;
-  font-size: 16px;
+  font-size: 14px;
   z-index: 1;
   background-color: #f5f6f6;
   padding: 10px;
@@ -430,6 +455,7 @@
   padding: 20px;
   width: 100%;
   height: 300px;
+  object-fit: cover;
 }
 .card a {
   text-decoration: none;
@@ -472,13 +498,14 @@
   flex-direction: row;
   justify-content: space-evenly;
   cursor: pointer;
+  overflow: hidden;
 }
 
 .image_holder img {
   width: 15%;
-  height: 50%;
-  padding: 10px 0 0 0;
-  margin: 10px;
+  height: 100%;
+  padding: 10px 0 20px 0;
+  object-fit: contain;
 }
 
 #card2 {
@@ -489,12 +516,6 @@
 #card3 {
   position: relative;
   top: -420px;
-}
-
-#card4 img {
-  padding: 20px;
-  width: 100%;
-  height: 275px;
 }
 
 .footer .sign_in {

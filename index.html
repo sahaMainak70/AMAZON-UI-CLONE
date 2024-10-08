@@ -8,6 +8,7 @@
     <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
         integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
         crossorigin="anonymous" referrerpolicy="no-referrer" /> -->
+    <link rel="shortcut icon" href="images/Amazon Favicon.png" type="image/x-icon">
     <link rel="stylesheet" data-purpose="Layout StyleSheet" title="Web Awesome"
         href="/css/app-wa-462758aa1e172f82d39e1ea35e919e0a.css?vsn=d">
 
@@ -25,10 +26,10 @@
     <title>Amazon.com. Spend less. Smile more.</title>
 </head>
 
-<body>
+<body id="body">
     <div class="website_container">
         <div class="header">
-            <div class="navbar">
+            <div class="navbar" id="nav">
                 <div class="navbar_opener">
                     <div class="navbar_logo">
                         <div class="logo_holder active">
@@ -109,7 +110,8 @@
                         </div>
                     </div>
                     <div class="navbar_cart_icon active">
-                        <i class="fa-solid fa-cart-flatbed"></i>
+                        <i class="fa-regular fa-cart-plus"></i>
+                        <span>Cart</span>
                     </div>
                 </div>
             </div>
@@ -224,7 +226,7 @@
                 <button>Sign in</button>
                 <p id="p2">New Customer? <a href="#">Start here</a></p>
             </div>
-            <div class="back_to_top">
+            <div class="back_to_top" onclick="goToTop()">
                 <button>Back to top</button>
             </div>
             <div class="main_footer">
@@ -438,6 +440,33 @@
             </div>
         </div>
     </div>
+    <script>
+        const overlay = document.createElement('div');
+        overlay.classList.add('overlay');
+        document.body.appendChild(overlay);
+        const searchBarInput = document.querySelector('.search_bar').children[0];
+        const searchBar = document.querySelector('.navbar_search');
+        const body = document.getElementById('body');
+
+        searchBarInput.addEventListener('focus', function () {
+            searchBar.style.outline = '1px solid #ff9900';
+            searchBar.style.boxShadow = '0 0 2px 3px #ff9900';
+            searchBar.style.borderRadius = '4px';
+            // overlay.style.display = 'block';
+        });
+        searchBarInput.addEventListener('blur', function () {
+            searchBar.style.outline = 'none';
+            searchBar.style.boxShadow = 'none';
+            // overlay.style.display = 'none';
+        });
+
+        function goToTop() {
+            body.scrollIntoView({
+                behavior: 'smooth',
+                block: 'start'
+            });
+        }
+    </script>
 </body>
 
 </html>
